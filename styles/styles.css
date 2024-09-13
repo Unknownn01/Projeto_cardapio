@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #ffc5d1;
+}
+
+.product-item {
+    border-bottom: 1px solid #ccc; /* Linha separadora */
+}
+
+.product-item:last-child {
+    border-bottom: none; /* Remove linha do último item */
+}
+
+.products-container {
+    margin-bottom: 50px; /* Espaçamento entre os produtos e o carrinho */
+}
+
+.cart-section {
+    margin-top: 50px; /* Espaçamento para o botão do carrinho */
+}
+

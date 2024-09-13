@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+    <link rel="stylesheet" href="./styles/output.css"  />
+
+    
+    <title>Neiacakesgelado - a melhor confeitaria da cidade!</title>
+</head>
+<body>
+    
+    <!--inicio Header-->
+    <header class = "w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center relative">
+        <div class="absolute inset-0 bg-zinc-600 bg-opacity-40"></div> 
+        <div class ="w-full h-full flex flex-col justify-center items-center relative z-10">
+            <img
+            src="./assets/logo.png"
+            alt="logo Neiacakesgelado"
+            class = "w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" 
+            />
+            <h1 class = "text-3xl mt-4 mb-2 font-bold text-white">Neia Cakes Gelado</h1>
+        
+            <span class = "text-white font-medium">rua getulio vargas 1940,nossa senhora das graças - Porto velho</span>
+
+            <div class = "bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium"> seg a sex - 13 às 18:30 e sabado das 11 às 19</span>
+            </div>
+        
+        </div>
+    </header>
+    <!-- fim Header-->
+      
+        <h2
+            class ="text-2xl md:text-3xl font-bold text-center text-white mt-9 mb-6">
+            conheça algumas das nossas delicias
+        </h2>
+        <h2 class="font-bold text-2xl md:text-2xl text-white mx-auto max-w-7xl px-2 mb-10 text-center">
+            Bolos Temáticos 
+        </h2>
+    
+    <!-- inicio menu-->
+   
+    <div id="menu">
+       
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-10 ">
+            
+            <!-- PRODUTO Bolos tematicos ITEM -->
+            <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+                <img 
+                    src="./assets/BoloMar.png" 
+                    alt="Bolo Mar"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+                
+                <div>
+                    <p class="font-bold">Bolo Mar</p>
+                    <p class="text-sm">Um delicioso Bolo feito com massa de chocolate e uma cobertura e chantily,com decoração temática de praia</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 58,90</p>
+                        <button 
+                            class="bg-red-200 px-5 rounded add-to-cart-btn"
+                            data-name="BoloMar" 
+                            data-price="58.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM PRODUTO Bolos tematicos ITEM -->
+
+            <!-- PRODUTO Bolos tematicos ITEM -->
+            <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+                <img 
+                    src="./assets/boloBorboleta.png" 
+                    alt="Bolo bolo Borboleta"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+                
+                <div>
+                    <p class="font-bold">Bolo Borboleta</p>
+                    <p class="text-sm">Um delicioso Bolo feito com massa de chocolate e uma cobertura e chantily,com decoração de Borboletas</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 59,90</p>
+                        <button 
+                            class="bg-red-200 px-5 rounded add-to-cart-btn"
+                            data-name="boloBorboleta" 
+                            data-price="59.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM Bolos tematicos ITEM -->
+
+            <!-- PRODUTO Bolos tematicos ITEM -->
+            <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+                <img 
+                    src="./assets/boloVingadores.png" 
+                    alt="Bolo vingadores"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+                
+                <div>
+                    <p class="font-bold">Bolo Vingadores</p>
+                    <p class="text-sm">Um delicioso Bolo feito com massa de chocolate e uma cobertura e chantily,com decoração temática de heróis</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 59,90</p>
+                        <button 
+                            class="bg-red-200 px-5 rounded add-to-cart-btn"
+                            data-name="boloVingadores" 
+                            data-price="59.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM Bolos tematicos ITEM -->
+
+            <!-- Bolos tematicos ITEM -->
+            <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+                <img 
+                    src="./assets/Bolo15anos.png" 
+                    alt="Bolo15anos"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+                
+                <div>
+                    <p class="font-bold">Bolo 15 anos</p>
+                    <p class="text-sm">Um delicioso Bolo de 2 andares feito com massa de chocolate e uma cobertura e chantily,com decoração de 15 anos</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 89,90</p>
+                        <button 
+                            class="bg-red-200 px-5 rounded add-to-cart-btn"
+                            data-name="bolo15anos" 
+                            data-price="89.90"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- FIM Bolos tematicos ITEM -->
+        </main>
+
+        <div class="mx-auto max-w-7x1 px-2 my-2">
+            <h2 class="font-bold text-2xl md:text-2xl text-white mx-auto max-w-7xl px-2 mb-10 text-center">
+                Bolos Simples
+
+            </h2>
+        </div>
+        <!--Inicio bolos simples-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-10 ">
+            <!-- PRODUTO Bolos SIMPLES ITEM -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/BoloMesclado.png" 
+                alt="Bolo Mesclado"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">Bolo Mesclado</p>
+                <p class="text-sm">Um delicioso Bolo feito com massa de chocolate e uma cobertura e chantily mesclado com chocolate</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 49,90</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="BoloMesclado" 
+                        data-price="49.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM Bolos SIMPLES ITEM -->
+            <!-- PRODUTO Bolos SIMPLES ITEM -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/BoloBrigadeiro.png" 
+                alt="BoloBrigadeiro"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">Bolo Brigadeiro</p>
+                <p class="text-sm">Um delicioso Bolo feito com massa de chocolate e uma cobertura de brigadeiro com Brigadeiros em cima</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 69,90</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="BoloBrigadeiro" 
+                        data-price="69.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM Bolos SIMPLES ITEM -->
+            
+            <!-- PRODUTO Bolos SIMPLES ITEM -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/BoloBrancoMorango.png" 
+                alt="BoloBrancoMorango"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">BoloBrancoMorango</p>
+                <p class="text-sm">Um delicioso Bolo feito com massa de chocolate e uma cobertura de chantily e brigadeiro,e alguns morangos por cima</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 59,90</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="BoloBrancoMorango" 
+                        data-price="59.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM Bolos SIMPLES ITEM -->
+            <!-- PRODUTO Bolos SIMPLESITEM -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/boloBoneco.png" 
+                alt="boloBoneco"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">Bolo Bonequinho Personalizado</p>
+                <p class="text-sm">Um delicioso Bolo feito com massa de chocolate e uma cobertura de chantily,e um desenho com uma frase que pode ser personalizada como voce quiser</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 49,90</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="boloBoneco" 
+                        data-price="49.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM Bolos SIMPLES ITEM -->
+        </div>
+        <!--Fim bolos simples-->
+        <div class="mx-auto max-w-7x1 px-2 my-2">
+            <h2 class="font-bold text-2xl md:text-2xl text-white mx-auto max-w-7xl px-2 mb-5 text-center">
+                Doces diversos
+
+            </h2>
+        </div>
+        <!--Inicio Doces diversos-->
+        <div  class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-10 py-10">
+            <!--Inicio item Doces diversos-->
+            <!-- PRODUTO Doces diversos item -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/brigadeiros.png" 
+                alt="brigadeiros"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">Brigadeiros</p>
+                <p class="text-sm">Uma caixa com 12 deliciosos brigadeiros com 20g cada,nas opções Brigadeiro tradicional,beijinho ou brigadeiro de paçoca</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 31,90</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="Brigadeiros" 
+                        data-price="31.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM doces diversos ITEM -->
+            <!-- PRODUTO Doces diversos item -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/docinhos.png" 
+                alt="docinhosSortidos"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">docinhosSortidos</p>
+                <p class="text-sm">Uma caixa com 12 deliciosos doces divididos entre brigadeiros,beijinhos e brigadeiros de paçoca com 20g cada,podendo ser divididos como voce quiser</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 35,90</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="docinhosSortidos" 
+                        data-price="35,90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM doces diversos ITEM -->
+            <!-- PRODUTO Doces diversos item -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/cupcake.png" 
+                alt="cupcake"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">cupcake</p>
+                <p class="text-sm">Um delicioso cupcake de 80g disponivel nos sabores,morango,chocolate,ninho com chocolate e ninho com limao</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 7,90</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="cupcake" 
+                        data-price="7.90"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM doces diversos ITEM -->
+            <!-- PRODUTO Doces diversos item -->
+        <div class="flex gap-2 bottom shadow-md px-3 py-3 bg-white rounded-lg">
+            <img 
+                src="./assets/Brownies.png" 
+                alt="MiniBrownies"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+            />
+            
+            <div>
+                <p class="font-bold">Mini Brownies </p>
+                <p class="text-sm">Caixa com 8 deliciosos brownies com cobertura de brigadeiro disponiveis com kitkat,morando e ouro branco</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 40</p>
+                    <button 
+                        class="bg-red-200 px-5 rounded add-to-cart-btn"
+                        data-name="BoloMesclado" 
+                        data-price="40"
+                    >
+                        <i class="fa fa-cart-plus text-lg text-red-400"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+            <!-- FIM doces diversos ITEM -->
+        </div>
+
+    </div>
+    <!-- fim menu-->
+
+
+    <!-- modal cart-->
+    <div 
+        class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+        id="cart-modal"
+    >
+        
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+                    <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+                
+                <!-- Opção de escolha: buscar na loja ou delivery -->
+            <p class="font-bold mt-4 py-3">Forma de entrega:</p>
+            <label class="font-bold mt-4">
+                <input type="radio" name="deliveryOption" value="loja" onchange="toggleAddressInput()"> Buscar na Loja
+            </label>
+            <label class="font-bold mt-4">
+                <input type="radio" name="deliveryOption" value="delivery" onchange="toggleAddressInput()"> Delivery
+            </label>
+
+            <!-- Campo de endereço (escondido por padrão) -->
+            <div id="addressField" style="display: none;">
+                <p class="font-bold mt-4">Endereço de Entrega</p>
+                <input type="text" id="address" placeholder="Digite seu endereço completo..." class="w-full border-2 p-1 rounded my-1">
+
+
+                <p class="text-red-800 hidden" id="address-warning">Digite seu enderço completo!</p>
+            </div>
+
+            <script>
+                function toggleAddressInput() {
+                    // Obtém os valores dos rádios
+                    const deliveryOption = document.querySelector('input[name="deliveryOption"]:checked').value;
+                    const addressField = document.getElementById('addressField');
+                    
+                    // Exibe o campo de endereço somente se 'delivery' for selecionado
+                    if (deliveryOption === 'delivery') {
+                        addressField.style.display = 'block';
+                    } else {
+                        addressField.style.display = 'none';
+                    }
+                }
+            </script>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido pelo whatsapp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- fim modal cart-->
+    
+    
+    
+    <!--button cart footer-->
+    <footer class="w-full bg-white py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button
+        class="flex items-center gap-2 text-red-400 font-bold"
+        id="cart-btn"
+        >
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-red-400"></i>
+        </button>
+    </footer>
+    <!--button cart footer-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
