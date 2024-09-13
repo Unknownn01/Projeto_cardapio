@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -763,24 +763,12 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
-.mb-9 {
-  margin-bottom: 2.25rem;
 }
 
 .mt-2 {
@@ -799,8 +787,8 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-9 {
-  margin-top: 2.25rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .box-border {
@@ -2350,6 +2338,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2738,6 +2731,7 @@ video {
 
 body{
   background-color: #ffc5d1;
+  font-family: 'Roboto', sans-serif;
 }
 
 .product-item {
@@ -2848,11 +2842,6 @@ body{
     gap: 2.5rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2866,4 +2855,3 @@ body{
     }
   }
 }
-
