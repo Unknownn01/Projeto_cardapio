@@ -4,6 +4,7 @@
 
 body{
     background-color: #ffc5d1;
+    font-family: 'Roboto', sans-serif;
 }
 
 .product-item {
@@ -21,4 +22,3 @@ body{
 .cart-section {
     margin-top: 50px; /* Espaçamento para o botão do carrinho */
 }
-
