@@ -22,3 +22,13 @@ body{
 .cart-section {
     margin-top: 50px; /* Espaçamento para o botão do carrinho */
 }
+
+.cart-animation {
+    animation: cart-bounce 0.5s ease-in-out;
+  }
+  
+  @keyframes cart-bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }

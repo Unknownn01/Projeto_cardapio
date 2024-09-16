@@ -42,23 +42,28 @@ menu.addEventListener("click",function(event){
 })
 
 //Funçao para adicionar no carrinho
-function addToCart(name,price){
-    const existingItem = cart.find(item => item.name === name)
-
-    if(existingItem){
-        existingItem.quantity += 1;
+function addToCart(name, price) {
+    const existingItem = cart.find(item => item.name === name);
     
-    }else{
-        cart.push({
-            name,
-            price,
-            quantity: 1,
-    
-        })
+    if(existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ name, price, quantity: 1 });
     }
-    updateCartModal()
+  
+    // Animação do carrinho
+    const cartBtn = document.getElementById('cart-btn');
+    cartBtn.classList.add('cart-animation');
+    
+    setTimeout(() => {
+      cartBtn.classList.remove('cart-animation');
+    }, 500); // Duração da animação
+  
+    updateCartModal();
+  }
+  
 
-}
+    
 
 function updateCartModal(){
     cartItemsContainer.innerHTML ="";
@@ -150,6 +155,22 @@ checkoutBtn.addEventListener("click", function(){
                 background: "#ef4444",
   },
         }).showToast();
+const cartBtn = document.getElementById('cart-btn');
+
+function addToCart(item) {
+  // Lógica de adicionar item ao carrinho
+  // ...
+
+  // Adiciona a classe de animação
+  cartBtn.classList.add('bounce');
+
+  // Remove a classe de animação após a animação ser concluída
+  setTimeout(() => {
+    cartBtn.classList.remove('bounce');
+  }, 500);
+}
+
+
 
         return;
     }

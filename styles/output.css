@@ -771,6 +771,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -785,10 +789,6 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .box-border {
@@ -2338,11 +2338,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-pink-500 {
-  --tw-text-opacity: 1;
-  color: rgb(236 72 153 / var(--tw-text-opacity));
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -2752,6 +2747,24 @@ body{
 .cart-section {
   margin-top: 50px;
   /* Espaçamento para o botão do carrinho */
+}
+
+.cart-animation {
+  animation: cart-bounce 0.5s ease-in-out;
+}
+
+@keyframes cart-bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media (min-width: 640px) {
