@@ -695,6 +695,10 @@ video {
   z-index: 40;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .z-\[99\] {
   z-index: 99;
 }
@@ -765,6 +769,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -912,6 +920,10 @@ video {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-\[this-is\\\\\] {
@@ -1934,6 +1946,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1980,6 +1997,10 @@ video {
 
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
 }
 
 .bg-home {
@@ -2106,6 +2127,10 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-5 {
@@ -2767,6 +2792,120 @@ body{
   }
 }
 
+/* Estilização geral do modal do carrinho */
+
+#cart-modal .rounded-md {
+  font-family: 'Roboto', sans-serif;
+  /* Escolha uma fonte suave */
+  color: #333;
+  /* Cor do texto mais suave */
+}
+
+/* Título "Meu Carrinho" */
+
+#cart-modal h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Nome dos produtos */
+
+#cart-modal .font-medium {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Quantidade e Preço */
+
+#cart-modal p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Quantidade */
+
+#cart-modal p:nth-child(2) {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #888;
+}
+
+/* Preço */
+
+#cart-modal .mt-2 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Botão "Remover" */
+
+#cart-modal .remove-from-cart-btn {
+  font-size: 0.9em;
+  color: #e74c3c;
+  /* Cor do botão remover em vermelho */
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+#cart-modal .remove-from-cart-btn:hover {
+  color: #c0392b;
+  /* Escurece o vermelho ao passar o mouse */
+}
+
+/* Total */
+
+#cart-total {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Forma de entrega */
+
+#cart-modal .font-bold {
+  font-weight: 500;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Botões de fechar e finalizar pedido */
+
+#cart-modal button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cart-modal #close-modal-btn {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+}
+
+#cart-modal #close-modal-btn:hover {
+  background-color: #bbb;
+}
+
+#cart-modal #checkout-btn {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+}
+
+#cart-modal #checkout-btn:hover {
+  background-color: #219150;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2843,6 +2982,10 @@ body{
 }
 
 @media (min-width: 768px) {
+  .md\:w-\[600px\] {
+    width: 600px;
+  }
+
   .md\:min-w-\[600px\] {
     min-width: 600px;
   }
