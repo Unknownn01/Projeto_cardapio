@@ -241,7 +241,7 @@ function addToCart(item) {
 
 const message = encodeURIComponent(`Olá, gostaria de fazer um pedido:\n\n${cartItems}\n${endereco}`);
 
-  const phone = "+55 69992532022";
+  const phone = "+5569992532022";
 
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   cart = [];
